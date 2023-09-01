@@ -9,10 +9,25 @@ if (i % 2 == 1) {
 
 */
 
-let numArr = [2, 6, 3, 8, 17, 20, 1, 3, 23]
+let numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 function checkOdd(numArr) {
     return numArr % 2 !== 1
 }
 
 console.log(numArr.filter(checkOdd));
+
+// Jawaban kak Ilham
+// > arrow function
+let arr = [1, 2, 3, 4, 5, 6, 7]
+
+const even = (array) => array.filter(item => item % 2 === 0)
+
+console.log(even(arr));
+
+// > function biasa
+function even2 (array) {
+    return array.filter(item => item % 2 === 0)
+}
+
+console.log(even2(arr));
