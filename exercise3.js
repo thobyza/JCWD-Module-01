@@ -58,8 +58,7 @@ for (let i = num3; i > 1; i--) {
     counter3 *= i;
 }
 
-console.log(`${num3} -> ${desc3} = ${counter3}`);
-
+console.log(`${num3}! -> ${desc3} = ${counter3}`);
 
 
 

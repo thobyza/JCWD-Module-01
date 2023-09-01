@@ -16,6 +16,7 @@ else if (num > 1) {
             break;
         }
     }
+    
      if (isPrime) 
         console.log(`${num} is a prime number`);
      else 
