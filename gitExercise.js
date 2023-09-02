@@ -10,6 +10,6 @@
     3. git push origin [your branch]
 
     cara pindah branch
-    
-
+        - git checkout [branch name] {switch branch}
+        - git checkout -b [branch name] {switch and create branch}
 */
