@@ -8,4 +8,4 @@ let container = "";
 console.log(strInput.split(" "));
 let strSplitted = strInput.split(" ");
 
-console.log(strSplitted[0[0]].toUpperCase());
+// console.log(strSplitted[0].toUpperCase
