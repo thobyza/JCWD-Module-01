@@ -15,7 +15,7 @@ function arrAdd (arrInput, numToAdd) {
     return console.log(arrInput);
 }
 
-arrAdd(["john", "becky", "adam"], "smith");
+arrAdd(["john", "becky", "adam"], "adam");
 
 
 
