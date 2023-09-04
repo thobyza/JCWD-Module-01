@@ -17,6 +17,16 @@ function arrAdd (arrInput, numToAdd) {
 
 arrAdd(["john", "becky", "adam"], "adam");
 
+// **Jwbn kak Ilham
+
+/*
+negasi -> ! (kalau tidak butuh else, bisa pakai negasi)
+true = true
+!true = false
+false = false
+!false = true
+
+*/
 
 
 

@@ -10,9 +10,6 @@ output -> "book, pencil and apple.
 
 function arrJoin (arr) {
 
-    // let start = arr.length - 1;
-    // let deleteCount = 0;
-
     arr.splice(arr.length - 1, 0, "and");
     
     let strOutput = arr.join(", ");
@@ -30,4 +27,14 @@ function arrJoin (arr) {
 
 arrJoin(["apple", "orange", "grape", "cherry"]);
 
+// **Jwbn kak Ilham
 
+let arr2 = ["apple", "mango", "orange", "lemon"];
+
+function myFunc(input) {
+    let lastWord = input[input.length - 1]; // menampung value terakhir
+    input.pop() // menghapus value terakhir
+    return input.join(", ") + " and " + lastWord
+}
+
+console.log(myFunc(arr2));

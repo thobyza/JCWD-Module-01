@@ -16,5 +16,15 @@ function sumNum(arr) {
     return console.log(sum);
 }
 
-sumNum([1, 'string', null, false, undefined, 2, 'yes', undefined, 7]);
+sumNum([1, 'string', null, false, undefined, 2, 'yes', undefined, 1]);
 
+// **Jwbn Kak Ilham
+
+let arr = [1, "a", null, "9", 3, 2]
+
+function myFunc(input) {
+    return input.filter(item => typeof item == "number")
+    .reduce((a, b) => a + b);
+}
+
+console.log(myFunc(arr));

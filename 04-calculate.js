@@ -6,13 +6,24 @@ a. Example : [1, 2, 3] + [3, 2, 1] → [4, 4, 4]
 
 */
 
-function arrAddition(arr1, arr2) {
+// function arrAddition(arr1, arr2) {
 
-    for (let i = 0; i < arr1.length; i++) {
-        arr1[i] = arr1[i] + arr2[i];
-    }
+//     for (let i = 0; i < arr1.length; i++) {
+//         arr1[i] = arr1[i] + arr2[i];
+//     }
 
-    return console.log(arr1);
+//     return console.log(arr1);
+// }
+
+// arrAddition([1, 2, 3], [3, 2, 1]);
+
+// **Jwbn kak Ilham
+
+let arr = [1, 2, 3];
+let arr2 = [3, 2, 1]
+
+function myFunc(a, b) {
+    return a.map((item, index) => item + b[index]);
 }
 
-arrAddition([1, 2, 3], [3, 2, 1]);
+console.log(myFunc(arr, arr2));
