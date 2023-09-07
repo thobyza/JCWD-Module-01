@@ -36,7 +36,7 @@ class Player {
     }
 
     useItem(item) {
-
+        this.health += item.health;
     }
 
     showStatus() {
@@ -57,4 +57,6 @@ class ShootingGame {
 
     }
 }
+
+
 
