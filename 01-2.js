@@ -35,7 +35,7 @@ class FulltimeEmployee {
             hourlyRate = 100000;
         } else {
             hourlyRate = 75000;
-        }31`46---`
+        }
 
         const salary = this.workHoursPerDay * hourlyRate;
         return salary;
