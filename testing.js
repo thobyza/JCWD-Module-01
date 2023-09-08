@@ -1,28 +1,27 @@
-// let arr1 = [16, 21, 18, 23, 1, 4, 8, 9, 11, 1]; // purwadhika
+// HackerRank Diagonal
 
-// let allLet = [
-//     " ", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 
-//     "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", 
-//     "u", "v", "w", "x", "y", "z"
-// ];
+let arrNew = [
+  [11, 2, 4], // arr[0][0]
+  [4, 5, 6], // arr[1][1]
+  [10, 8, -12], // arr[2][2]
+];
 
-// let newArr = [];
+// array for diag 1 -> arr[0][0], arr[1][1], arrNew[2][2]
+// array for diag 1 -> arr[0][2], arr[1][1], arrNew[2][0]
 
-// newArr.push(allLet[arr1[0]]);
+function diagonalDifference(arr) {
+  // Write your code here
+  let diag1 = [];
+  let diag2 = [];
 
-// console.log(newArr);
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      diag1.push(arr[i][j]);
+      //   console.log(arr[i][j]);
+    }
+  }
 
-let arr1 = [1000000001, 1000000002, 1000000003, 1000000004, 1000000005];
-
-
-function aVeryBigSum(ar) {
-    // Write your code here
-    
-    let sumNum = ar.reduce((a, b) => a + b);
-
-    return sumNum;
-
+  return diag1;
 }
 
-console.log(aVeryBigSum(arr1));
-
+console.log(diagonalDifference(arrNew));
