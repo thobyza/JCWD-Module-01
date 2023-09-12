@@ -1,15 +1,12 @@
+/*
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+*/
 
 
-// console.log(5 ^ 3 ^ 1 ^ 3);
-// console.log(5 ^ 3 ^ 1 ^ 3);
+function (nums, target) {
 
-let str = "Hello"
+};
 
-console.log(str.charCodeAt(0));
-
-
-let charA = 'A';
-let charB = 'Z';
-
-let numericValueB = charB.charCodeAt(0) - charA.charCodeAt(0);
-console.log(numericValueB); // Output: 2
+console.log(twoSum([2, 7, 11, 15], 9));
