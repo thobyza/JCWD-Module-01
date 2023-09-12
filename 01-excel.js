@@ -39,9 +39,6 @@ function convertExcel(input) {
 console.log(convertExcel("AB"));
 
 
-
-
-
 // --------
 
 function convertExcel(input) {
