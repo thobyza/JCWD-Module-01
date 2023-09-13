@@ -5,8 +5,11 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 */
 
 
-function (nums, target) {
 
-};
+// let str = "LVIII";
 
-console.log(twoSum([2, 7, 11, 15], 9));
+// console.log(str.length);
+
+let arr = [2, 3, 6, 1, 8, 5];
+
+console.log(Math.min(...arr));
