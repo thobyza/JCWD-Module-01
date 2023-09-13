@@ -1,15 +1,42 @@
 
+// console.log(Math.floor(11 / 3));
 
-// console.log(5 ^ 3 ^ 1 ^ 3);
-// console.log(5 ^ 3 ^ 1 ^ 3);
+// console.log(Math.floor(2 / 3));
 
-let str = "Hello"
+// console.log([5, 7] <= [13, 4]);
 
-console.log(str.charCodeAt(0));
+// 
+
+// let arr1 = [5, 8, 1, 4, 2, 9, 3, 7, 6];
+
+// function meanderArray(input) {
+//     let sorted = input.sort((a, b) => a - b);
+//     let output = [];
+
+//     for (let i = 0; i < input.length + 2; i++) {
+//         output.push(sorted.pop());
+//         output.push(sorted.shift());
+//     }
+//     console.log(output);
+//     return output;
+// }
+
+// meanderArray(arr1);
 
 
-let charA = 'A';
-let charB = 'Z';
+let unsortedArr = [5, 3, 1, 2, 4]
 
-let numericValueB = charB.charCodeAt(0) - charA.charCodeAt(0);
-console.log(numericValueB); // Output: 2
+function meanderArray(s) {
+    let sorted = s.sort((a, b) => a - b);
+    let output = [];
+
+    for (let i = 0; i < s.length + 2; i++) {
+        output.push(sorted.pop());
+        output.push(sorted.shift());
+    }
+    console.log(output);
+    output.pop();
+    return output;
+}
+
+meanderArray(unsortedArr);
