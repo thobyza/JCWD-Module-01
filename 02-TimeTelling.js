@@ -34,29 +34,33 @@
 
 // console.log(idTimeTelling("00:46"));
 
-// function convertToIndonesianTime(time) {
-//     let [hours, minutes] = time.split(':').map(Number);
-//     if (hours === 0) {
-//         hours = 12;
-//     }
-//     if (hours > 12) {
-//         hours -= 12;
-//     }
+function tellIndonesianTime(time) {
+    const [hour, minutes] = time.split(":").map(Number);
+    let indonesianHour = hour;
+    if (hour > 12) {
+        indonesianHour -= 12;
+    } else if (hour === 0) {
+        indonesianHour = 12;
+    }
 
-//     minutes = parseInt(minutes);
-//     if (minutes === 0) {
-//         return `jam ${hours}`;
-//     } else if (minutes <= 14 || (16 <= minutes && minutes <= 29)) {
-//         return `jam ${hours} lewat ${minutes}`;
-//     } else if (minutes === 15) {
-//         return `jam ${hours} seperempat`;
-//     } else if (minutes === 30) {
-//         return `jam setengah ${hours + 1}`;
-//     } else if (minutes <= 44 || (46 <= minutes && minutes <= 59)) {
-//         return `jam ${hours + 1} kurang ${60 - minutes}`;
-//     } else if (minutes === 45) {
-//         return `jam ${hours + 1} kurang seperempat`;
-//     }
-// }
+    if (minutes === 0) {
+        return `jam ${indonesianHour}`;
+    } else if (minutes >= 1 && minutes <= 14) {
+        return `jam ${indonesianHour} lewat ${minutes}`;
+    } else if (minutes === 15) {
+        return `jam ${indonesianHour} seperempat`;
+    } else if (minutes >= 16 && minutes <= 29) {
+        return `jam ${indonesianHour} lewat ${minutes}`;
+    } else if (minutes === 30) {
+        return `jam setengah ${indonesianHour + 1}`;
+    } else if (minutes >= 31 && minutes <= 44) {
+        return `jam ${indonesianHour + 1} kurang ${60 - minutes}`;
+    } else if (minutes === 45) {
+        return `jam ${indonesianHour + 1} kurang seperempat`;
+    } else if (minutes >= 46 && minutes <= 59) {
+        return `jam ${indonesianHour + 1} kurang ${minutes - 60}`;
+    }
+}
 
-// console.log(convertToIndonesianTime("00:46"));
+console.log(tellIndonesianTime("00:46"));
+
