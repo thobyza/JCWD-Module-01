@@ -1,15 +1,12 @@
 
-
-// console.log("10" < "009");
-
-console.log("Soal Nomor 1 quiz");
-const product = [
+const arr = [
     [1, 2, 3, 4],
     [5, 6, 7, 8],
     [9, 10, 11, 12],
-    [13, 10, 15, 11],
+    [7, 14, 15, 1]
 ];
-const duplicationCounter = (product) => {
+
+function duplicationCounter(product) {
     const identifierCount = {};
 
     for (let row = 0; row < 4; row++) {
@@ -32,5 +29,6 @@ const duplicationCounter = (product) => {
     }
 
     return errorCount;
-};
-console.log(duplicationCounter(product)); 
+}
+
+console.log(duplicationCounter(arr));
