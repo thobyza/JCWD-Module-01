@@ -1,9 +1,9 @@
 let age = 21;
 
 if (age >= 17) {
-  console.log("You can now create an ID card.");
+    console.log("You can now create an ID card.");
 } else {
-  console.log("You are not enough to create and ID card.");
+    console.log("You are not enough to create and ID card.");
 }
 
 // [!] Else If, multiple conditions
@@ -94,7 +94,7 @@ switch (month) {
 //Nan example
 let str = "abc";
 
-console.log(Number(str)); 
+console.log(Number(str));
 
 // [!] Logical Operators
 let car = "BMW";
@@ -127,6 +127,6 @@ if (word2 === "Javascript") {
     console.log("Not Javascript nor Python")
 }
 
-console.log(word2 === "Javascript" ? "This is Javascript" : 
-word2 === "Python" ? "This is Python" : "Not Javascript nor Python");
+console.log(word2 === "Javascript" ? "This is Javascript" :
+    word2 === "Python" ? "This is Python" : "Not Javascript nor Python");
 
